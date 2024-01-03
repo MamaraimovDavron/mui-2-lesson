@@ -1,17 +1,19 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
+// import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+// import Toolbar from "@mui/material/Toolbar";
+// import Typography from "@mui/material/Typography";
+// import Button from "@mui/material/Button";
 // import IconButton from "@mui/material/IconButton";
 // import MenuIcon from "@mui/icons-material/Menu";
 import { CssBaseline } from "@mui/material";
+import Navbar from "./Navbar";
 
 const App = () => {
   return (
-    <CssBaseline>
-      <Box sx={{ flexGrow: 1 }}>
+    <Box>
+      <CssBaseline>
+        {/* <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -31,17 +33,12 @@ const App = () => {
                 <Button color="inherit">LOG OUT</Button>
               </Typography>
             </Toolbar>
-
-            {/* <Typography>
-              <Button color="inherit">LISTINGS</Button>
-              <Button color="inherit">MENTORS</Button>
-              <Button color="inherit">MY ACCOUNT</Button>
-              <Button color="inherit">LOG OUT</Button>
-            </Typography> */}
           </Toolbar>
         </AppBar>
-      </Box>
-    </CssBaseline>
+      </Box> */}
+        <Navbar />
+      </CssBaseline>
+    </Box>
   );
 };
 
