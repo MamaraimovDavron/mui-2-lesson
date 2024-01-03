@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+// import IconButton from "@mui/material/IconButton";
+// import MenuIcon from "@mui/icons-material/Menu";
+import { CssBaseline } from "@mui/material";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CssBaseline>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              Femmecubator
+            </Typography>
+            <Toolbar>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Button color="inherit">LISTINGS</Button>
+              </Typography>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Button color="inherit">MENTORS</Button>
+              </Typography>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Button color="inherit">MY ACCOUNT</Button>
+              </Typography>
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Button color="inherit">LOG OUT</Button>
+              </Typography>
+            </Toolbar>
+
+            {/* <Typography>
+              <Button color="inherit">LISTINGS</Button>
+              <Button color="inherit">MENTORS</Button>
+              <Button color="inherit">MY ACCOUNT</Button>
+              <Button color="inherit">LOG OUT</Button>
+            </Typography> */}
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </CssBaseline>
   );
-}
+};
 
 export default App;
