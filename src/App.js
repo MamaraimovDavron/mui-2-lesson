@@ -8,35 +8,39 @@ import Box from "@mui/material/Box";
 // import MenuIcon from "@mui/icons-material/Menu";
 import { CssBaseline } from "@mui/material";
 import Navbar from "./Navbar";
+import Zone from "./Zone";
+
+
 
 const App = () => {
   return (
     <Box>
       <CssBaseline>
         {/* <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
-          <Toolbar>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Femmecubator
-            </Typography>
+          <AppBar position="static">
             <Toolbar>
               <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Button color="inherit">LISTINGS</Button>
+                Femmecubator
               </Typography>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Button color="inherit">MENTORS</Button>
-              </Typography>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Button color="inherit">MY ACCOUNT</Button>
-              </Typography>
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                <Button color="inherit">LOG OUT</Button>
-              </Typography>
+              <Toolbar>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <Button color="inherit">LISTINGS</Button>
+                </Typography>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <Button color="inherit">MENTORS</Button>
+                </Typography>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <Button color="inherit">MY ACCOUNT</Button>
+                </Typography>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  <Button color="inherit">LOG OUT</Button>
+                </Typography>
+              </Toolbar>
             </Toolbar>
-          </Toolbar>
-        </AppBar>
-      </Box> */}
-        <Navbar />
+          </AppBar>
+        </Box> */}
+        {/* <Navbar /> */}
+        <Zone />
       </CssBaseline>
     </Box>
   );
